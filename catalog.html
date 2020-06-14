@@ -11,7 +11,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="img/nerds-logo.png" alt="логотип">
+        <img src="img/nerds-logo.png" alt="логотип" width="160px" height="65px">
       </a>
       <ul class="site-navigation">
         <li><a href="studio.html">студия</a></li>
@@ -41,7 +41,7 @@
 
         <li class="catalog-item">
           <p class="item-photo">
-            <img src="img/img-sedona.jpg" alt="седона">
+            <img src="img/img-sedona.jpg" alt="седона" width="360px" height="576px">
           </p>
 
           <div>
@@ -57,7 +57,7 @@
 
         <li class="catalog-item">
           <p class="item-photo">
-            <img src="img/img-pink.jpg" alt="приложение пинк">
+            <img src="img/img-pink.jpg" alt="приложение пинк" width="360px" height="576px">
           </p>
 
           <div>
@@ -73,7 +73,7 @@
 
         <li class="catalog-item">
           <p class="item-photo">
-            <img src="img/img-barbershop.jpg" alt="Бородинский">
+            <img src="img/img-barbershop.jpg" alt="Бородинский" width="360px" height="576px">
           </p>
 
           <div>
@@ -89,7 +89,7 @@
 
         <li class="catalog-item">
           <p class="item-photo">
-            <img src="img/img-mishka.jpg" alt="мишка">
+            <img src="img/img-mishka.jpg" alt="мишка" width="360px" height="576px">
           </p>
 
           <div>
@@ -105,7 +105,7 @@
 
         <li class="catalog-item">
           <p class="item-photo">
-            <img src="img/img-aplus.jpg" alt="Аплюс">
+            <img src="img/img-aplus.jpg" alt="Аплюс" width="360px" height="576px">
           </p>
 
           <div>
@@ -121,7 +121,7 @@
 
         <li class="catalog-item">
           <p class="item-photo">
-            <img src="img/img-kvast.jpg" alt="кваст">
+            <img src="img/img-kvast.jpg" alt="кваст" width="360px" height="576px">
           </p>
 
           <div>
@@ -158,8 +158,8 @@
         <h2 class="visually-hidden">Контакты</h2>
 
         <figure class="footer-map">
-            <img src="img/map.jpg" alt="карта">
-            <img src="img/map-marker.png" alt="точка нахождения">
+          <img src="img/map.jpg" alt="карта" width="1440px" height="416px">
+          <img src="img/map-marker.png" alt="точка нахождения" width="231px" height="190px">
         </figure>
 
         <div class="footer-appointment">
@@ -186,11 +186,25 @@
     </section>
 </footer>
   
-  <section class="modal write-us">
-    <h2>Напишите нам</h2>
-    <!-- -->
-    <button class="button modal-close">Закрыть</button>
-  </section>
+<section class="modal write-us">
+  <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru">
+        <p class="write-us-item">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Имя Фамилия" id="name">
+        </p>
+        <p class="write-us-item">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" name="email" placeholder="email@example.com" id="email">
+        </p>
+        <p class="write-us-item">
+            <label for="text">Текст письма:</label>
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+            <button class="button" type="submit">Отправить</button>
+    </form>
+  <button class="button modal-close">Закрыть</button>
+</section>
 </body>
 
 </html>
