@@ -27,15 +27,108 @@
     <h1>Магазин готовых шаблонов</h1>
 
     <section class="filters">
-      <h2 class="visually-hidden">Фильтры</h2>
+        <h2 class="visually-hidden">Фильтры</h2>
 
-      <!-- здесь будет форма-->
+        <form action="https://echo.htmlacademy.ru" method="POST" class="filters-form">
+          <fieldset>
+            <legend>Стоимость:</legend>
+
+            <input type="range" multiple name="price-range" id="price-range" min="0" max="15000" step="1" value="5000">
+
+            <p>
+              <span>От</span><input type="number" value="0" name="number-from" id="number-from">
+              <span>До</span><input type="number" value="15000" name="number-to" id="number-to">
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Сетка:</legend>
+
+            <ul>
+              <li>
+                <input type="radio" name="filter-grid" id="adaptiv" class="filter-grid visually-hidden" checked>
+                <label for="adaptiv">Адаптивная</label>
+              </li>
+
+              <li>
+                <input type="radio" name="filter-grid" id="fix" class="filter-grid visually-hidden">
+                <label for="fix">Фиксированная</label>
+              </li>
+
+              <li>
+                <input type="radio" name="filter-grid" id="rubber" class="filter-grid visually-hidden">
+                <label for="rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="slider" id="slider" class="filter-features visually-hidden" checked>
+                <label for="slider">Слайдер</label>
+              </li>
+
+              <li>
+                <input type="checkbox" name="block" id="block" class="filter-features visually-hidden">
+                <label for="block">Блок преимуществ</label>
+              </li>
+
+              <li>
+                <input type="checkbox" name="news" id="news" class="filter-features visually-hidden" checked>
+                <label for="news">Новости</label>
+              </li>
+
+              <li>
+                <input type="checkbox" name="galery" id="galery" class="filter-features visually-hidden">
+                <label for="galery">Галерея</label>
+              </li>
+
+              <li>
+                <input type="checkbox" name="cart" id="cart" class="filter-features visually-hidden">
+                <label for="cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button type="submit" class="button filter-button-submit">Показать</button>
+        </form>
     </section>
 
     <section class="catalog">
       <h2 class="visually-hidden">Каталог услуг</h2>
 
-      <!-- здесь будет форма-->
+      <form action="https://echo.htmlacademy.ru" method="POST" class="order-form">
+        <h3 class="order-form-header">Сортировать</h3>
+        <ul>
+          <li>
+            <input type="radio" name="order-form-option" id="on-price" class="order-option visually-hidden" checked >
+            <label for="on-price">По цене</label>
+          </li>
+
+          <li>
+            <input type="radio" name="order-form-option" id="on-type" class="order-option visually-hidden">
+            <label for="on-type">По типу</label>
+          </li>
+
+          <li>
+            <input type="radio" name="order-form-option" id="on-name" class="order-option visually-hidden">
+            <label for="on-name">По названию</label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="radio" name="order-form-option-up-down" id="up-down" class="order-option visually-hidden" checked >
+            <label for="up-down">Сверху вниз</label>
+          </li>
+
+          <li>
+            <input type="radio" name="order-form-option-up-down" id="down-up" class="order-option visually-hidden">
+            <label for="down-up">Снизу вверх</label>
+          </li>
+        </ul>
+      </form>
 
       <ul class="catalog-list>">
 
@@ -51,7 +144,7 @@
               Информационный сайт для туристов
             </div>
 
-            <span class="price">9 900руб.</span>
+            <button class="button price" type="button">9 900руб.</button>
           </div>
         </li>
 
@@ -67,7 +160,7 @@
               Продуктовый лендинг приложения для iOS и Android
             </div>
 
-            <span class="price">9 900руб.</span>
+            <button class="button price" type="button">9 900руб.</button>
           </div>
         </li>
 
@@ -83,7 +176,7 @@
               Сайт салоны красоты. Для мужчин, да.
             </div>
 
-            <span class="price">9 900руб.</span>
+            <button class="button price" type="button">9 900руб.</button>
           </div>          
         </li>
 
@@ -99,7 +192,7 @@
               Интернет-магазин вязаных игрушек
             </div>
 
-            <span class="price">9 900руб.</span>
+            <button class="button price" type="button">9 900руб.</button>
           </div>
         </li>
 
@@ -115,7 +208,7 @@
               Лендинг курсов повышения квалификации
             </div>
             
-            <span class="price">9 900руб.</span>
+            <button class="button price" type="button">9 900руб.</button>
           </div>
         </li>
 
@@ -131,7 +224,7 @@
               Промо-сайт производителя крафтового кваса
             </div>
 
-            <span class="price">9 900руб.</span>
+            <button class="button price" type="button">9 900руб.</button>
           </div>
         </li>
       </ul>
@@ -155,7 +248,7 @@
   
   <footer class="main-footer">
     <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+      <h2 class="visually-hidden">Контакты</h2>
 
         <figure class="footer-map">
           <img src="img/map.jpg" alt="карта" width="1440px" height="416px">
