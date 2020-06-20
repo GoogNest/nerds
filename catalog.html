@@ -12,7 +12,7 @@
 <body class="inner-page">
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
+      <a href="index.html" class="main-header-logo">
         <img src="img/nerds-logo.png" alt="логотип" width="160px" height="65px">
       </a>
       <ul class="site-navigation">
@@ -32,7 +32,7 @@
         <h2 class="visually-hidden">Фильтры</h2>
 
         <form action="https://echo.htmlacademy.ru" method="POST" class="filters-form">
-          <fieldset>
+          <fieldset class="filter-price">
             <legend>Стоимость:</legend>
 
             <input type="range" multiple name="price-range" id="price-range" min="0" max="15000" step="1" value="5000">
@@ -43,7 +43,7 @@
             </p>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="filters-grid">
             <legend>Сетка:</legend>
 
             <ul>
@@ -58,13 +58,13 @@
               </li>
 
               <li>
-                <input type="radio" name="filter-grid" id="rubber" class="filter-grid visually-hidden">
+                <input type="radio" name="filter-grid" id="rubber" class="filter-grid visually-hidden" disabled>
                 <label for="rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
           
-          <fieldset>
+          <fieldset class="filters-features">
             <legend>Особенности:</legend>
             <ul>
               <li>
@@ -88,7 +88,7 @@
               </li>
 
               <li>
-                <input type="checkbox" name="cart" id="cart" class="filter-features visually-hidden">
+                <input type="checkbox" name="cart" id="cart" class="filter-features visually-hidden" disabled>
                 <label for="cart">Корзина</label>
               </li>
             </ul>
@@ -102,7 +102,7 @@
       <h2 class="visually-hidden">Каталог услуг</h2>
 
       <form action="https://echo.htmlacademy.ru" method="POST" class="order-form">
-        <h3 class="order-form-header">Сортировать</h3>
+        <h3 class="order-form-header">Сортировать:</h3>
         <ul>
           <li>
             <input type="radio" name="order-form-option" id="on-price" class="order-option visually-hidden" checked >
@@ -139,14 +139,14 @@
             <img src="img/img-sedona.jpg" alt="седона" width="360px" height="576px">
           </p>
 
-          <div>
+          <div class="item-buy">
             <h3 class="item-title"><a href="sedona.html">sedona</a></h3>
 
             <div class="item-description">
               Информационный сайт для туристов
             </div>
 
-            <button class="button price" type="button">9 900руб.</button>
+            <button class="button price" type="button">9 900 руб.</button>
           </div>
         </li>
 
@@ -155,14 +155,14 @@
             <img src="img/img-pink.jpg" alt="приложение пинк" width="360px" height="576px">
           </p>
 
-          <div>
+          <div class="item-buy">
             <h3 class="item-title"><a href="pink.html">pink app</a></h3>
   
             <div class="item-description">
               Продуктовый лендинг приложения для iOS и Android
             </div>
 
-            <button class="button price" type="button">9 900руб.</button>
+            <button class="button price" type="button">9 900 руб.</button>
           </div>
         </li>
 
@@ -171,14 +171,14 @@
             <img src="img/img-barbershop.jpg" alt="Бородинский" width="360px" height="576px">
           </p>
 
-          <div>
+          <div class="item-buy">
             <h3 class="item-title"><a href="barber.html">Barbershop</a></h3>
             
             <div class="item-description">
               Сайт салоны красоты. Для мужчин, да.
             </div>
 
-            <button class="button price" type="button">9 900руб.</button>
+            <button class="button price" type="button">9 900 руб.</button>
           </div>          
         </li>
 
@@ -187,14 +187,14 @@
             <img src="img/img-mishka.jpg" alt="мишка" width="360px" height="576px">
           </p>
 
-          <div>
+          <div class="item-buy">
             <h3 class="item-title"><a href="mishka.html">mishka</a></h3>
 
             <div class="item-description">
               Интернет-магазин вязаных игрушек
             </div>
 
-            <button class="button price" type="button">9 900руб.</button>
+            <button class="button price" type="button">9 900 руб.</button>
           </div>
         </li>
 
@@ -203,14 +203,14 @@
             <img src="img/img-aplus.jpg" alt="Аплюс" width="360px" height="576px">
           </p>
 
-          <div>
+          <div class="item-buy">
             <h3 class="item-title">a plus</h3>
               
             <div class="item-description">
               Лендинг курсов повышения квалификации
             </div>
             
-            <button class="button price" type="button">9 900руб.</button>
+            <button class="button price" type="button">9 900 руб.</button>
           </div>
         </li>
 
@@ -219,14 +219,14 @@
             <img src="img/img-kvast.jpg" alt="кваст" width="360px" height="576px">
           </p>
 
-          <div>
+          <div class="item-buy">
             <h3 class="item-title">кваст</h3>
 
             <div class="item-description">
               Промо-сайт производителя крафтового кваса
             </div>
 
-            <button class="button price" type="button">9 900руб.</button>
+            <button class="button price" type="button">9 900 руб.</button>
           </div>
         </li>
       </ul>
@@ -242,7 +242,7 @@
           <a href="#">3</a>
         </li>
         <li class="pagination-item">
-          <a href="#">4</a>
+          <a href="#">следующая</a>
         </li>
       </ul>
     </section>
@@ -265,7 +265,7 @@
                     
                     тел. +7 (812) 275-75-75
             </p>
-            <a class="buttom" href="write.html">Напишите нам</a>
+            <a class="button" href="write.html">Напишите нам</a>
         </div>
 
         <div class="footer-social">
