@@ -10,16 +10,19 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <a class="main-header-logo">
-                <img src="img/nerds-logo.png" alt="логотип" width="160px" height="65px">
-            </a>
-            <ul class="site-navigation">
-                <li><a href="studio.html">студия</a></li>
-                <li><a href="clients.html">клиенты</a></li>
-                <li><a href="catalog.html">магазин</a></li>
-                <li><a href="contacts.html">контакты</a></li>
-                <li><a class="cart-link" href="cart.html">корзина</a></li>
-            </ul>
+            <div class="container">
+                <a class="main-header-logo">
+                    <img src="img/nerds-logo.png" alt="логотип" width="160px" height="65px">
+                </a>
+                
+                <ul class="site-navigation">
+                    <li class="studio-link"><a href="studio.html">студия</a></li>
+                    <li class="clients-link"><a href="clients.html">клиенты</a></li>
+                    <li class="catalog-link"><a href="catalog.html">магазин</a></li>
+                    <li class="contacts-link"><a href="contacts.html">контакты</a></li>
+                    <li class="cart-link"><a href="cart.html">корзина</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -30,30 +33,42 @@
             <h2 class="visually-hidden">Преимущества</h2>
 
             <ul class="advantages-list">
-                <li class="advantage-item">
-                    <h3>Долго, дорого, скрупулезно.</h3>
-                    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <li class="advantage-item container visually-hidden">
+
+                    <div class="discription-area">
+                        <h3>Долго, дорого, скрупулезно.</h3>
+                        <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+                        <button type="button" class="button">узнать больше</button>
+                    </div>
+
                     <img src="img/slide1.png" alt="Три телефона" width="698px" height="413px">
-                    <button type="button" class="button">узнать больше</button>
                 </li>
 
-                <li class="advantage-item">
-                    <h3>Любим математику как никто другой</h3>
-                    <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <li class="advantage-item container">
+
+                    <div class="discription-area">
+                        <h3>Любим математику как никто другой</h3>
+                        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                        <button type="button" class="button">узнать больше</button>
+                    </div>
+
                     <img src="img/slide2.png" alt="Два монитора" width="663px" height="430px">
-                    <button type="button" class="button">узнать больше</button>
                 </li>
 
-                <li class="advantage-item">
-                    <h3>Только ночь, только хардкор</h3>
-                    <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <li class="advantage-item container visually-hidden">
+
+                    <div class="discription-area">
+                        <h3>Только ночь, только хардкор</h3>
+                        <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                        <button type="button" class="button">узнать больше</button>
+                    </div>
+
                     <img src="img/slide3.png" alt="Планшет и телефон" width="759px" height="411px">
-                    <button type="button" class="button">узнать больше</button>
                 </li>
             </ul>
         </section>
 
-        <section class="features">
+        <!-- <section class="features">
             <h2 class="visually-hidden">Функции</h2>
 
             <ul class="features-list">
@@ -139,9 +154,9 @@
                     <img src="img/logo4.png" alt="лого" width="173px" height="84px">
                 </li>
             </ul>
-        </section>
+        </section> -->
     </main>
-
+    <!--
     <footer class="main-footer">
         <section class="contacts">
             <h2 class="visually-hidden">Контакты</h2>
@@ -194,6 +209,6 @@
                 <button class="button" type="submit">Отправить</button>
         </form>
       <button class="button modal-close">Закрыть</button>
-    </section>
+    </section> -->
 </body>
 </html>
