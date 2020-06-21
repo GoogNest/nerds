@@ -1,3 +1,8 @@
+html, body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +14,12 @@ body {
   color: #283136;
 
   background-color: #ffffff;
+
+  /* Временно для сетки */
+  background-image: url('img/nerds-index.jpg');
+  background-size: 1372px auto;
+  background-repeat: no-repeat;
+
 }
 
 a {
