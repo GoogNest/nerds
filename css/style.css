@@ -193,18 +193,42 @@ main.container {
   margin-top: 22px;
 }
 
-.advantage-item img {
-  margin-right: 30px;
-  margin-top: 20px;
+.advantage-item-slide1 img {
+  margin-right: 32px;
+  margin-top: 17px;
+}
+
+.advantage-item-slide2 img {
+  margin-left: -30px;
+  margin-top: 0;
+}
+
+.advantage-item-slide3 img {
+  margin-top: 18px;
+  margin-left: -30px;
+}
+
+.advantage-item-slide3 h3 {
+  width: 430px;
+  letter-spacing: 0.6px;
+}
+
+.advantage-item-slide2 p {
+  width: 420px;
 }
 
 .features-list {
   list-style: none;
+  display: flex;
 }
 
 .features-item {
   text-align: left;
+  width: 300px;
+  margin-right: 100px;
+  margin-top: 81px;
 
+  outline: 1px solid red;
   background-color: #ffffff;
 }
 
@@ -214,6 +238,10 @@ main.container {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+
+  margin: 20px auto 0 -1px;
+
+  outline: 1px solid green;
 }
 
 .features-item p {
@@ -221,6 +249,14 @@ main.container {
   line-height: 24px;
   font-weight: 400;
   color: #283136;
+
+  width: 260px;
+  outline: 1px solid blueviolet;
+}
+
+.features-item .button {
+  width: 160px;
+  margin-top: 15px;
 }
 
 .description {
