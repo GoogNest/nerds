@@ -956,15 +956,22 @@ main.container {
   margin: 0;
   padding: 0;
   display: flex;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .pagination-item {
   min-width: 50px;
   min-height: 50px;
+  margin-right: 11.5px;
+
 }
 
 .pagination-item a {
+  display: block;
+  box-sizing: border-box;
+  min-width: 50px;
+  min-height: 50px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -974,7 +981,11 @@ main.container {
   background-color: #eeeeee;
   border: 3px solid #eeeeee;
   border-radius: 3px;
-  padding: 10px;
+  padding: 12px;
+}
+
+.pagination-item:last-child a {
+  width: 260px;
 }
 
 .pagination-list a:hover,
