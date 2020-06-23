@@ -624,6 +624,10 @@ main.container {
   border-radius: 3px;
 }
 
+.inner-page .footer-map {
+  margin-top: 60px;
+}
+
 .inner-page h1 {
   font-size: 55px;
   font-weight: 500;
