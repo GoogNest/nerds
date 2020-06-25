@@ -869,6 +869,37 @@ main.container {
   opacity: 0.4;
 }
 
+.filter-grid:checked + label::before {
+  content: "";
+
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/radio-on.png);
+  left: -35px;
+  top: -2px;
+  opacity: 0.4;
+}
+
+.filter-grid:hover + label::before,
+.filter-grid:focus + label::before {
+  opacity: 1;
+}
+
+.filter-grid:hover + label,
+.filter-grid:focus + label {
+  color: #000000;
+}
+
+.filter-grid:disabled + label::before {
+  opacity: 0.2;
+}
+
+.filter-grid:disabled + label {
+  color: #283136;
+  opacity: 0.3;
+}
+
 .filters label {
   font-size: 16px;
   line-height: 20px;
@@ -891,24 +922,58 @@ main.container {
   margin-top: 15px;
 }
 
-.filter-grid:hover + label,
-.filter-grid:focus + label {
-  color: #000000;
+.filters-features li {
+  position: relative;
 }
 
-.filter-features:hover + label,
-.filter-features:focus + label {
-  color: #000000;
+.filter-features:hover + label::before,
+.filter-features:focus + label::before {
+  opacity: 1;
 }
 
-.filter-grid:disabled + label {
-  color: #283136;
-  opacity: 0.3;
+.filter-features:hover:checked + label::before,
+.filter-features:focus:checked + label::before {
+  opacity: 1;
+}
+
+.filter-features + label::before {
+  content: "";
+
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.png);
+  left: -35px;
+  top: 1px;
+  opacity: 0.4;
+}
+
+.filter-features:checked + label::before {
+  content: "";
+
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.png);
+  left: -35px;
+  top: 1px;
+  opacity: 0.4;
+}
+
+
+
+.filter-features:disabled + label::before {
+  opacity: 0.2;
 }
 
 .filter-features:disabled + label {
   color: #283136;
   opacity: 0.3;
+}
+
+.filter-features:hover + label,
+.filter-features:focus + label {
+  color: #000000;
 }
 
 .filter-button-submit {
@@ -959,8 +1024,63 @@ main.container {
 }
 
 .catalog-order-form .up-down {
-  width: 44px;
+  width: 60px;
+  height: 24px;
+  margin-left: 28px;
+  margin-top: auto;
 }
+
+.up-down li {
+  position: relative;
+  width: 30px;
+}
+
+.order-option-up-down + label::before{
+  content: "";
+
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  top: 8px;
+  right: 0;
+  background-image: url(../img/icon-up-dir.png);
+  opacity: 0.2;
+}
+
+.order-option-down-up + label::before{
+  content: "";
+
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  top: 8px;
+  right: 0;
+  background-image: url(../img/icon-down-dir.png);
+  opacity: 0.2;
+}
+
+.order-option-up-down:hover + label::before,
+.order-option-up-down:focus + label::before{
+  
+  opacity: 0.6;
+}
+
+.order-option-down-up:hover + label::before,
+.order-option-down-up:focus + label::before {
+ 
+  opacity: 0.6;
+}
+
+.order-option-up-down:checked + label::before{
+  
+  opacity: 1;
+}
+
+.order-option-down-up:checked + label::before{
+ 
+  opacity: 1;
+}
+
 
 .catalog h3 {
   font-size: 18px;
