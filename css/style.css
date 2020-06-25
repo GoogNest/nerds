@@ -1060,24 +1060,20 @@ main.container {
 }
 
 .order-option-up-down:hover + label::before,
-.order-option-up-down:focus + label::before{
-  
+.order-option-up-down:focus + label::before {
   opacity: 0.6;
 }
 
 .order-option-down-up:hover + label::before,
 .order-option-down-up:focus + label::before {
- 
   opacity: 0.6;
 }
 
-.order-option-up-down:checked + label::before{
-  
+.order-option-up-down:checked + label::before {
   opacity: 1;
 }
 
-.order-option-down-up:checked + label::before{
- 
+.order-option-down-up:checked + label::before {
   opacity: 1;
 }
 
@@ -1129,54 +1125,39 @@ main.container {
 .catalog-list .catalog-item {
   width: 360px;
   height: 615.5px;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
+  margin-top: -1px;
 }
 
-.catalog-list .catalog-item-sedona {
-  background-image: url(../img/img-sedona.jpg);
-  background-size: 360px 576px;
-  background-repeat: no-repeat;
-  background-position: bottom;
+.item-photo .browser {
+  position: relative;
+  z-index: 2;
+  opacity: 0.12;
 }
 
-.catalog-list .catalog-item-pink {
-  background-image: url(../img/img-pink.jpg);
-  background-size: 360px 576px;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.catalog-list .catalog-item-barber {
-  background-image: url(../img/img-barbershop.jpg);
-  background-size: 360px 576px;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.catalog-list .catalog-item-mishka {
-  background-image: url(../img/img-mishka.jpg);
-  background-size: 360px 576px;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.catalog-list .catalog-item-aplus {
-  background-image: url(../img/img-aplus.jpg);
-  background-size: 360px 576px;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.catalog-list .catalog-item-kvast {
-  background-image: url(../img/img-kvast.jpg);
-  background-size: 360px 576px;
-  background-repeat: no-repeat;
-  background-position: bottom;
+.item-photo .background-photo {
+  position: relative;
+  z-index: 1;
+  margin-top: -8px;
 }
 
 .item-buy {
+  position: relative;
   background-color: #eeeeee;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 231px;
+  margin-top: -237px;
+}
+
+.item-buy .item-title {
+  width: 360px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 0;
 }
 
 .item-title a {
@@ -1189,10 +1170,32 @@ main.container {
 }
 
 .item-description {
+  width: 230px;
+  margin: 0 auto;
+  margin-top: 16px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
+}
+
+.item-buy .button {
+  box-sizing: border-box;
+  width: 200px;
+  height: 50px;
+  margin: auto auto;
+  margin-bottom: 43px;
+}
+
+.catalog-item:hover .browser,
+.catalog-item:focus .browser {
+  opacity: 1;
+}
+
+.catalog-item:hover .item-buy,
+.catalog-item:focus .item-buy {
+  z-index: 2;
 }
 
 .pagination-list {
