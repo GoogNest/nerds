@@ -258,6 +258,60 @@ main.container {
   width: 420px;
 }
 
+.advantage-item-slide1 {
+    display: none;
+}
+
+.advantage-item-slide2 {
+    display: none;
+}
+
+.advantage-item-slide3 {
+    display: flex;
+}
+
+.slider-buttons {
+    list-style: none;
+    display: flex;
+    
+    position: relative;
+    bottom: 100px;
+    left: 200px;
+}
+
+.slider-buttons li {
+    position: relative;
+    width: 18px;
+    margin-right: 15px;
+}
+
+.slider-buttons .slider-button + label::before {
+    content: "";
+    
+    position: absolute;
+    
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #ffffff;
+}
+
+.slider-buttons .slider-button:checked + label::after {
+    content: "";
+    
+    position: absolute;
+    
+    width: 4px;
+    height: 4px;
+    
+    top: 5px;
+    left: 5px;
+    border: 2px solid #c1c1c1;
+    border-radius: 6px;
+    
+    background-color: #ffffff;
+}
+
 .features-list {
   list-style: none;
   display: flex;
