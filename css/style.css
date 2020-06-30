@@ -733,6 +733,23 @@ main.container {
   margin-top: 10px;
 }
 
+.modal {
+  position: fixed;
+}
+
+.write-us {
+  width: 960px;
+  padding: 70px 100px;
+  padding-bottom: 80px;
+
+  top: 180px;
+  left: 50%;
+  margin-left: -580px;
+  z-index: 10;
+
+  background-color: #ffffff;
+}
+
 .write-us h2 {
   font-size: 45px;
   line-height: 45px;
