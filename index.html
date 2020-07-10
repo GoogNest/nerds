@@ -186,7 +186,7 @@
                     <p class="footer-appointment-tel">
                         тел. +7 (812) 275-75-75
                     </p>
-                    <a class="button" href="write.html">Напишите нам</a>
+                    <a class="button button-write-us" href="write.html">Напишите нам</a>
                     <img class="img-marker" src="img/map-marker.png" alt="точка нахождения" width="231" height="190">
                 </div>
             </div>
@@ -205,25 +205,30 @@
             </div>
         </section>
     </footer>
-    <!--
-    <section class="modal write-us">
-      <h2>Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru">
-            <p class="write-us-item">
-                <label for="name">Ваше имя:</label>
-                <input type="text" name="name" placeholder="Имя Фамилия" id="name">
-            </p>
-            <p class="write-us-item">
-                <label for="email">Ваш e-mail:</label>
-                <input type="email" name="email" placeholder="email@example.com" id="email">
-            </p>
-            <p class="write-us-item">
+    
+    <section class="modal write-us container">
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+            <div class="write-us-items">
+                <div class="write-us-item">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" name="name" placeholder="Имя Фамилия" id="name" required>
+                </div>
+                <div class="write-us-item">
+                    <label for="email">Ваш e-mail:</label>
+                    <input type="email" name="email" placeholder="email@example.com" id="email" required>
+                </div>
+            </div>
+            <p class="write-us-item item-textarea">
                 <label for="text">Текст письма:</label>
-                <textarea name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
             </p>
-                <button class="button" type="submit">Отправить</button>
+            <button class="button button-submit" type="submit">Отправить</button>
         </form>
-      <button class="button modal-close">Закрыть</button>
-    </section> -->
+        <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+    </section>
+    
+    <script src="js/main.js"></script>
+    
 </body>
 </html>

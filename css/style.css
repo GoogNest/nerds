@@ -735,6 +735,11 @@ main.container {
 
 .modal {
   position: fixed;
+  display: none;
+}
+
+.modal-show {
+    display: block;
 }
 
 .write-us {
@@ -742,12 +747,14 @@ main.container {
   padding: 70px 100px;
   padding-bottom: 80px;
 
-  top: 180px;
+  top: 50%;
   left: 50%;
   margin-left: -480px;
+  margin-top: -295px;
   z-index: 10;
 
   background-color: #ffffff;
+  box-shadow: 0px 20px 20px rgba(0,1,1,0.75);
 }
 
 .write-us h2 {
@@ -805,6 +812,8 @@ main.container {
   border-radius: 3px;
   padding: 16px;
   margin-bottom: 48px;
+  
+  height: 86px;
 }
 
 .write-us .button-submit {
@@ -846,11 +855,13 @@ main.container {
 .write-us input:focus {
   border: 2px solid #000000;
   border-radius: 3px;
+  outline: none;
 }
 
 .write-us textarea:focus {
   border: 2px solid #000000;
   border-radius: 3px;
+  outline: none;
 }
 
 .inner-page .footer-map {
@@ -1321,6 +1332,11 @@ main.container {
 .catalog-item:hover .item-buy,
 .catalog-item:focus .item-buy {
   z-index: 2;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+   box-shadow: 0px 6px 7.5px rgba(0,1,1,0.25);
 }
 
 .pagination-list {
