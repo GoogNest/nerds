@@ -745,16 +745,15 @@ main.container {
 .write-us {
   width: 760px;
   padding: 70px 100px;
-  padding-bottom: 80px;
+  padding-bottom: 0;
 
-  top: 50%;
+  bottom: 180px;
   left: 50%;
   margin-left: -480px;
-  margin-top: -295px;
   z-index: 10;
 
   background-color: #ffffff;
-  box-shadow: 0px 10px 20px rgba(0,1,1,0.75);
+  box-shadow: 0px 16px 20px rgba(0,1,1,0.75);
 }
 
 .write-us h2 {
@@ -772,7 +771,7 @@ main.container {
     display: flex;
     justify-content: space-between;
     
-    margin-bottom: 30px;
+    margin-bottom: 36px;
 }
 
 .write-us-item {
@@ -799,26 +798,37 @@ main.container {
   font: inherit;
   background-color: transparent;
 
+  box-sizing: border-box;
   border: 2px solid #d7dcde;
   border-radius: 3px;
-  padding: 16px;
+  padding: 12px 12px;
+  height: 50px;
+
+}
+
+.write-us label[for="text"] {
+  margin-bottom: 10px;
 }
 
 .write-us textarea {
   font: inherit;
   background-color: transparent;
 
+  box-sizing: border-box;
   border: 2px solid #d7dcde;
   border-radius: 3px;
-  padding: 16px;
-  margin-bottom: 48px;
+  padding: 8px 12px;
+  margin-bottom: 30px;
   
-  height: 86px;
+  height: 118px;
 }
 
 .write-us .button-submit {
+    font-weight: 500;
     box-sizing: border-box;
     width: 260px;
+    height: 50px;
+    margin-bottom: 84px;
 }
 
 .write-us .modal-close {
@@ -827,7 +837,7 @@ main.container {
     height: 21px;
     border: 0;
     
-    top: 95px;
+    top: 80px;
     right: 90px;
     background-color: transparent;
     background-image: url(../img/close-cross.svg);
@@ -840,6 +850,11 @@ main.container {
 
 .write-us .modal-close:active {
     opacity: 0.1;
+}
+
+.write-us input:invalid {
+  color: #e74246;
+  border-color: #e74246;
 }
 
 .write-us input:hover {
