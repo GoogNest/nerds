@@ -975,6 +975,7 @@ main.container {
   border-radius: 3px;
 
   display: flex;
+  cursor: pointer;
 }
 
 .filter-price .price-from-to {
@@ -1358,6 +1359,7 @@ main.container {
   line-height: 18px;
   font-weight: 400;
   color: #666666;
+  overflow: hidden;
 }
 
 .item-buy .button {
