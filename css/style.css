@@ -852,7 +852,7 @@ main.container {
     opacity: 0.1;
 }
 
-.write-us input:invalid {
+.write-us input:invalid:not(:placeholder-shown):not(:focus) {
   color: #e74246;
   border-color: #e74246;
 }
