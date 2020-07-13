@@ -881,6 +881,11 @@ main.container {
   border-color: #e74246;
 }
 
+.modal-error input:placeholder-shown {
+    color: #e74246;
+    border-color: #e74246;
+}
+
 .write-us input:hover {
   border: 2px solid #b4b9bb;
   border-radius: 3px;
