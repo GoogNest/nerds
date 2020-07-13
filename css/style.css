@@ -733,6 +733,19 @@ main.container {
   margin-top: 10px;
 }
 
+@keyframes bounce {
+    0%   { transform: translateY(-2000px); }
+    50%  { transform: translateY(50px)   ; }
+    75%  { transform: translateY(-10px)  ; }
+    100% { transform: translateY(0)      ; }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0) ;    }
+    30%, 70% { transform: translateX(-20px); }
+    50%      { transform: translateX(20px);  }
+}
+
 .modal {
   position: fixed;
   display: none;
@@ -740,6 +753,13 @@ main.container {
 
 .modal-show {
     display: block;
+    animation-name: bounce;
+    animation-duration: 2s;
+}
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: 2s;
 }
 
 .write-us {
